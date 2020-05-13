@@ -76,7 +76,7 @@ int main()
        cin>>ql>>qr;
        cout << query(segmenttree,ql-1,qr-1,0,n-1,1)<<endl;
      }
-     else
+     else if(s == "update")
      {
        lli p,val;
        cin>>p>>val;
