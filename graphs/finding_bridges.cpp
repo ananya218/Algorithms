@@ -28,7 +28,7 @@ void dfs(int root, int parent = -1)
     else if(visited[child]) low[root] = min(low[root], in[child]);
     else{
       dfs(child,root);
-      if(in[root] < low[child]) cout<<"the edge "<<root<<" -> "<<child<<" is a bridge"<<endl;
+      if(in[root] < low[child]) cout<<"the edge "<<root<<" -> "<<child<<" is a bridge."<<endl;
       low[root] = min(low[root], low[child]);
     }
   }
